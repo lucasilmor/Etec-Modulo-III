@@ -1,0 +1,55 @@
+{
+
+    "jogos": [
+
+      {
+
+        "id": 1,
+
+        "descricao": "Super Mário",
+
+        "genero": "Aventura",
+
+        "rating": 10
+
+      },
+
+      {
+
+        "id": 2,
+
+        "descricao": "Red Dead Redemption",
+
+        "genero": "Faroeste",
+
+        "rating": 8
+
+      },
+
+      {
+
+        "id": 3,
+
+        "descricao": "Free Fire",
+
+        "genero": "Ação",
+
+        "rating": 5
+
+      },
+
+      {
+
+        "id": 4,
+
+        "descricao": "Fifa 2021",
+
+        "genero": "Esportes",
+
+        "rating": 7
+
+      }
+
+    ]
+
+  }
