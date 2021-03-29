@@ -1,0 +1,68 @@
+{
+  "Personagens": [
+    {
+      "id": 1,
+      "nome": "Scorpion",
+      "facção": "Shirai Ryu",
+      "rating": 9
+    },
+    {
+      "id": 2,
+      "nome": "Sub-Zero",
+      "facção": "Lin Kuei",
+      "rating": 8
+    },
+    {
+      "id": 3,
+      "nome": "Liu-Kang",
+      "facção": "Shaolin",
+      "rating": 10
+    },
+    {
+      "id": 4,
+      "nome": "Sônia Blade",
+      "facção": "Special Forces",
+      "rating": 7
+    }
+  ],
+  "Cenarios": [
+    {
+      "nome": "Ponte dos espinhos",
+      "plano": "Exo Terra" 
+    },
+    {
+      "nome": "Base Militar",
+      "plano": "Plano Terreno" 
+    },
+    {
+      "nome": "Inferno",
+      "plano": "Exo Terra" 
+    },
+    {
+      "nome": "New York",
+      "plano": "Plano terreno" 
+    }
+  ],
+  "Poderes": [
+    {
+      "nome": "Chute Voador",
+      "comando": "frente, frente, chute alto",
+      "versão": "Mortal Kombat 1"  
+    },
+    {
+      "nome": "Invisibilidade ",
+      "comando": "Bloqueio e aperte Cima, Cima, Corrida",
+      "versão": "Mortal Kombat 3"  
+    },
+    {
+      "nome": "lança",
+      "comando": "atrás, atrás, soco baixo",
+      "versão": "Mortal Kombat 9"  
+    },
+    {
+      "nome": "Congelar",
+      "comando": " Frente, soco baixo",
+      "versão": "Mortal Kombat 11"  
+    }
+  ]
+}
