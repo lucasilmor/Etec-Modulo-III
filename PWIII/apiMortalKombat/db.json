@@ -27,42 +27,50 @@
   ],
   "Cenarios": [
     {
+      "id": 10,
       "nome": "Ponte dos espinhos",
-      "plano": "Exo Terra" 
+      "plano": "Exo Terra"
     },
     {
+      "id": 11,
       "nome": "Base Militar",
-      "plano": "Plano Terreno" 
+      "plano": "Plano Terreno"
     },
     {
+      "id": 12,
       "nome": "Inferno",
-      "plano": "Exo Terra" 
+      "plano": "Exo Terra"
     },
     {
+      "id": 13,
       "nome": "New York",
-      "plano": "Plano terreno" 
+      "plano": "Plano terreno"
     }
   ],
   "Poderes": [
     {
+      "id": 14,
       "nome": "Chute Voador",
       "comando": "frente, frente, chute alto",
-      "versão": "Mortal Kombat 1"  
+      "versão": "Mortal Kombat 1"
     },
     {
+      "id": 15,
       "nome": "Invisibilidade ",
       "comando": "Bloqueio e aperte Cima, Cima, Corrida",
-      "versão": "Mortal Kombat 3"  
+      "versão": "Mortal Kombat 3"
     },
     {
+      "id": 16,
       "nome": "lança",
       "comando": "atrás, atrás, soco baixo",
-      "versão": "Mortal Kombat 9"  
+      "versão": "Mortal Kombat 9"
     },
     {
+      "id": 17,
       "nome": "Congelar",
       "comando": " Frente, soco baixo",
-      "versão": "Mortal Kombat 11"  
+      "versão": "Mortal Kombat 11"
     }
   ]
 }
