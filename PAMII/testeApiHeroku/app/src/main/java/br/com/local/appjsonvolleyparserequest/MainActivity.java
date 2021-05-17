@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
                             txtResult.append("Personagens" + "\n\n");
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject personagens = response.getJSONObject(i);
-
-
                                 int id = personagens.getInt("id");
                                 String name = personagens.getString("nome");
                                 String faccao = personagens.getString("facção");
