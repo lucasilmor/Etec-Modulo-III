@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Adicionar novo Mamaco"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/txtNomeNovoMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entre com o nome do Macaco" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="6dp"
+            android:text="Selecione a espécie do macaco" />
+
+        <Spinner
+            android:id="@+id/spnEspecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Especies" />
+
+        <EditText
+            android:id="@+id/txtNovaIdadeDoMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="Entre com a idade do macaco"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnAdicionarMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Macaco"
+            android:backgroundTint="#009688"
+            />
+
+        <TextView
+            android:id="@+id/lblVisualizaMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Visualizar Macacos"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

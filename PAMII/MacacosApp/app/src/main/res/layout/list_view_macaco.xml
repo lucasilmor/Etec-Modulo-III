@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNomeViewMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="Nome do Macaco"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/txtEspecieViewMacaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espécie"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txtIdadeViewMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/txtEntradaviewMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data entrada" />
+
+        <ImageView
+            android:id="@+id/imgViewMacaco"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="199dp"
+            android:layout_marginTop="-110dp"
+            android:src="@drawable/prego"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="-275dp">
+
+
+        <Button
+            android:id="@+id/btnEditarViewMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#03A9F4"
+            android:text="Editar" />
+
+        <Button
+            android:id="@+id/btnExcluirViewMacaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#E91E63"
+            android:text="Excluir" />
+    </LinearLayout>
+
+</LinearLayout>

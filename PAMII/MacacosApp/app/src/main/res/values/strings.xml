@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">macacosApp</string>
+
+    <array name="Especies">
+        <item>Chimpanzé</item>
+        <item>Mandril</item>
+        <item>Orangotango</item>
+        <item>Lêmure</item>
+        <item>Macaco Prego</item>
+        <item>Babuino</item>
+        <item>Trachypithecus obscurus</item>
+        <item>Sagui</item>
+        <item>Macaco Dourado</item>
+        <item>Nigra</item>
+        <item>Gorila</item>
+        <item>Macaco Narigudo</item>
+    </array>
+</resources>
