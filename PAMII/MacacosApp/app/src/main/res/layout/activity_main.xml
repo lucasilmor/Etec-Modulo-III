@@ -13,6 +13,13 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/macaco"
+            android:layout_gravity="center"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,6 +27,7 @@
             android:gravity="center"
             android:text="Adicionar novo Mamaco"
             android:textStyle="bold"
+            android:textColor="#009688"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <EditText
@@ -64,6 +72,7 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="Visualizar Macacos"
+            android:textColor="#009688"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textStyle="bold" />
 
