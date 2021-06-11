@@ -23,13 +23,11 @@ import java.util.List;
 
 public class MacacoAdapter extends ArrayAdapter<Macacos> {
 
-    //Variaveis globais
     Context mCtx;
     int listaLayoutRes;
     List<Macacos> listaMacacos;
     SQLiteDatabase meuBancoDeDados;
 
-    //Construtor da classe
     public MacacoAdapter(Context mCtx, int listaLayoutRes, List<Macacos> listaMacacos, SQLiteDatabase meuBancoDeDados) {
         super(mCtx, listaLayoutRes, listaMacacos);
 
@@ -91,7 +89,6 @@ public class MacacoAdapter extends ArrayAdapter<Macacos> {
                 builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        //somente vai voltar para tela.
                         recarregarMacacosDB();
 
                     }
@@ -122,9 +119,7 @@ public class MacacoAdapter extends ArrayAdapter<Macacos> {
         txtEditarMacaco.setText(macacos.getNome());
         txtEditarIdade.setText(String.valueOf(macacos.getIdade()));
 
-        //Criando o janela de diálogo
         final AlertDialog dialog = builder.create();
-        //Mostrando a janela de diálogo
         dialog.show();
 
         view.findViewById(R.id.btnAlterarMacaco).setOnClickListener(new View.OnClickListener() {
@@ -158,7 +153,6 @@ public class MacacoAdapter extends ArrayAdapter<Macacos> {
 
     }
 
-    //Realizar um select na tabela
     public void recarregarMacacosDB() {
         Cursor cursorMacacos = meuBancoDeDados.rawQuery("SELECT * FROM macacos", null);
         if (cursorMacacos.moveToFirst()) {

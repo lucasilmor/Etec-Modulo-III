@@ -2,11 +2,9 @@ package com.example.macacosapp;
 
 public class Macacos {
 
-    //variaveis que representam os campos do banco de dados
     private int id, idade;
     private String nome, especie, dataEntrada;
 
-    //Construtor da classe
 
     public Macacos(int id, String nome, String especie, String dataEntrada, int idade) {
         this.id = id;
@@ -17,7 +15,6 @@ public class Macacos {
     }
 
 
-    //criando os métodos de acesso getter e setter
 
 
     public int getId() {

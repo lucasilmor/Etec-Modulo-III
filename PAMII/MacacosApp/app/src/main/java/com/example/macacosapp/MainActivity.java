@@ -29,11 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button btnAdicionaMacaco;
 
-    //Declarando a variavel que terá todos os comandos do SQLite
     SQLiteDatabase meuBancoDeDados;
 
-    //Create Database, Table
-    //Insert, Select, Update, Delete
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,22 +44,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnAdicionaMacaco = findViewById(R.id.btnAdicionarMacaco);
 
-        //Irá pegar a ação de click nos dois componentes
         btnAdicionaMacaco.setOnClickListener(this);
         lblMacacos.setOnClickListener(this);
 
-        //Criando banco de dados
         meuBancoDeDados = openOrCreateDatabase(NOME_BANCO_DE_DADOS, MODE_PRIVATE, null);
 
-        //Criar as tabelas para o banco de dados
         criarTabelaEmpregado();
 
-        //initList();
 
         Spinner spinnerMacacos = findViewById(R.id.spnEspecies);
 
-        //Adapter = new imgAdapter(this, Especie);
-        //spinnerMacacos.setAdapter(Adapter);
 
         spinnerMacacos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -76,10 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-
-
-//Este método irá validar o nome e o salário
-    //departamento não precisa de validação, pois é um spinner e não pode estar vazio
 
     private boolean verificarEntrada(String nome, String salario) {
         if (nome.isEmpty()) {
@@ -96,19 +83,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
-    //Neste método vamos fazer a operação para adicionar os funcionario
     private void adicionarEmpregado() {
 
         String nomeMaca = txtNomeMacaco.getText().toString().trim();
         String idadeMaca = txtIdadeMacaco.getText().toString().trim();
         String especMaca = spnEspecies.getSelectedItem().toString();
 
-        // obtendo o horário atual para data de inclusão
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         String dataEntrada = simpleDateFormat.format(calendar.getTime());
 
-        //validando entrada
         if (verificarEntrada(nomeMaca, idadeMaca)) {
 
 
@@ -119,9 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     "idade)" +
                     "VALUES(?, ?, ?, ?);";
 
-            // usando o mesmo método execsql para inserir valores
-            // desta vez tem dois parâmetros
-            // primeiro é a string sql e segundo são os parâmetros que devem ser vinculados à consulta
 
             meuBancoDeDados.execSQL(insertSQL, new String[]{nomeMaca, especMaca, dataEntrada, idadeMaca});
 
@@ -133,7 +114,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    //Limpar os campos apos cadastro
     public void limparCadastro() {
 
         txtNomeMacaco.setText("");
@@ -154,10 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
-    // este método irá criar a tabela
-    // como vamos chamar esse método toda vez que lançarmos o aplicativo
-    // Eu adicionei IF NOT EXISTS ao SQL
-    // então, só criará a tabela quando a tabela ainda não estiver criada
+
 
 
     private void criarTabelaEmpregado() {

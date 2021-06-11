@@ -31,7 +31,6 @@ public class Macacos_Activity extends AppCompatActivity {
         visualizarMacacosDatabase();
     }
 
-    //Executar um select na tabela do banco de dados
     private void visualizarMacacosDatabase() {
 
         Cursor cursorMacacos = meuBancoDeDados.rawQuery("SELECT * FROM macacos", null);
@@ -49,10 +48,8 @@ public class Macacos_Activity extends AppCompatActivity {
         }
         cursorMacacos.close();
 
-        //Verificar o layout
         macacoAdapter = new MacacoAdapter(this, R.layout.list_view_macaco, macacosList, meuBancoDeDados);
 
-        //carregando o adaptador na listView
         listViewMacacos.setAdapter(macacoAdapter);
     }
 }
